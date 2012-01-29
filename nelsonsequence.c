@@ -42,28 +42,19 @@ int main()
   fflush(stdout);
   if ( fgets(text, sizeof text, stdin) )
     {
-      if ( sscanf(text, "%d", &f) == 1 )
-	{
-	  printf("number = %d\n", f);
-	}
+      sscanf(text, "%d", &f) == 1;
     }
   fputs("Enter s (second num for first line): ", stdout);
   fflush(stdout);
   if ( fgets(text, sizeof text, stdin) )
     {
-      if ( sscanf(text, "%d", &s) == 1 )
-	{
-	  printf("number = %d\n", s);
-	}
+      sscanf(text, "%d", &s) == 1;
     }
   fputs("Enter t (number of terms in each line): ", stdout);
   fflush(stdout);
   if ( fgets(text, sizeof text, stdin) )
     {
-      if ( sscanf(text, "%d", &terms) == 1 )
-	{
-	  printf("number = %d\n", terms);
-	}
+      sscanf(text, "%d", &terms) == 1;
     }
 
 
